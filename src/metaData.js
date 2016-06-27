@@ -26,7 +26,7 @@
         $.each(providers, function(index, provider) {
             result = provider(type, imageId);
             if (result !== undefined) {
-                return true;
+                return false;
             }
         });
         return result;
